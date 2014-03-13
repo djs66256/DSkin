@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		659B452518D1F8CD001EE013 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659B452418D1F8CD001EE013 /* Foundation.framework */; };
+		659B452718D1F8CD001EE013 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659B452618D1F8CD001EE013 /* CoreGraphics.framework */; };
+		659B452918D1F8CD001EE013 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659B452818D1F8CD001EE013 /* UIKit.framework */; };
+		659B452F18D1F8CE001EE013 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 659B452D18D1F8CE001EE013 /* InfoPlist.strings */; };
+		659B453118D1F8CE001EE013 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 659B453018D1F8CE001EE013 /* main.m */; };
+		659B453518D1F8CE001EE013 /* DAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 659B453418D1F8CE001EE013 /* DAppDelegate.m */; };
+		659B453718D1F8CE001EE013 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 659B453618D1F8CE001EE013 /* Images.xcassets */; };
+		659B453E18D1F8CE001EE013 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659B453D18D1F8CE001EE013 /* XCTest.framework */; };
+		659B453F18D1F8CE001EE013 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659B452418D1F8CD001EE013 /* Foundation.framework */; };
+		659B454018D1F8CE001EE013 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659B452818D1F8CD001EE013 /* UIKit.framework */; };
+		659B454818D1F8CE001EE013 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 659B454618D1F8CE001EE013 /* InfoPlist.strings */; };
+		659B454A18D1F8CE001EE013 /* DSkinDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 659B454918D1F8CE001EE013 /* DSkinDemoTests.m */; };
+		659B455518D1F900001EE013 /* DMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 659B455418D1F900001EE013 /* DMainViewController.m */; };
+		659B455A18D1FCF0001EE013 /* DSystemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 659B455818D1FCF0001EE013 /* DSystemViewController.m */; };
+		659B455B18D1FCF0001EE013 /* DSystemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 659B455918D1FCF0001EE013 /* DSystemViewController.xib */; };
+		659B457318D1FE92001EE013 /* DColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 659B455F18D1FE92001EE013 /* DColor.m */; };
+		659B457418D1FE92001EE013 /* DImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 659B456118D1FE92001EE013 /* DImage.m */; };
+		659B457518D1FE92001EE013 /* DObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 659B456318D1FE92001EE013 /* DObject.m */; };
+		659B457618D1FE92001EE013 /* DSkin.m in Sources */ = {isa = PBXBuildFile; fileRef = 659B456518D1FE92001EE013 /* DSkin.m */; };
+		659B457718D1FE92001EE013 /* DBaseSkin.m in Sources */ = {isa = PBXBuildFile; fileRef = 659B456818D1FE92001EE013 /* DBaseSkin.m */; };
+		659B457818D1FE92001EE013 /* DDayTimeSkin.m in Sources */ = {isa = PBXBuildFile; fileRef = 659B456A18D1FE92001EE013 /* DDayTimeSkin.m */; };
+		659B457918D1FE92001EE013 /* DNightSkin.m in Sources */ = {isa = PBXBuildFile; fileRef = 659B456C18D1FE92001EE013 /* DNightSkin.m */; };
+		659B457A18D1FE92001EE013 /* UIImageView+skin.m in Sources */ = {isa = PBXBuildFile; fileRef = 659B457018D1FE92001EE013 /* UIImageView+skin.m */; };
+		659B457B18D1FE92001EE013 /* UIView+skin.m in Sources */ = {isa = PBXBuildFile; fileRef = 659B457218D1FE92001EE013 /* UIView+skin.m */; };
+		659B457F18D20129001EE013 /* daytime.plist in Resources */ = {isa = PBXBuildFile; fileRef = 659B457D18D20129001EE013 /* daytime.plist */; };
+		659B458018D20129001EE013 /* night.plist in Resources */ = {isa = PBXBuildFile; fileRef = 659B457E18D20129001EE013 /* night.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		659B454118D1F8CE001EE013 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 659B451918D1F8CD001EE013 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 659B452018D1F8CD001EE013;
+			remoteInfo = DSkinDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		659B452118D1F8CD001EE013 /* DSkinDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSkinDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		659B452418D1F8CD001EE013 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		659B452618D1F8CD001EE013 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		659B452818D1F8CD001EE013 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		659B452C18D1F8CE001EE013 /* DSkinDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DSkinDemo-Info.plist"; sourceTree = "<group>"; };
+		659B452E18D1F8CE001EE013 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		659B453018D1F8CE001EE013 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		659B453218D1F8CE001EE013 /* DSkinDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DSkinDemo-Prefix.pch"; sourceTree = "<group>"; };
+		659B453318D1F8CE001EE013 /* DAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DAppDelegate.h; sourceTree = "<group>"; };
+		659B453418D1F8CE001EE013 /* DAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DAppDelegate.m; sourceTree = "<group>"; };
+		659B453618D1F8CE001EE013 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		659B453C18D1F8CE001EE013 /* DSkinDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DSkinDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		659B453D18D1F8CE001EE013 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		659B454518D1F8CE001EE013 /* DSkinDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DSkinDemoTests-Info.plist"; sourceTree = "<group>"; };
+		659B454718D1F8CE001EE013 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		659B454918D1F8CE001EE013 /* DSkinDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSkinDemoTests.m; sourceTree = "<group>"; };
+		659B455318D1F900001EE013 /* DMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMainViewController.h; sourceTree = "<group>"; };
+		659B455418D1F900001EE013 /* DMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMainViewController.m; sourceTree = "<group>"; };
+		659B455718D1FCF0001EE013 /* DSystemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSystemViewController.h; path = SystemView/DSystemViewController.h; sourceTree = "<group>"; };
+		659B455818D1FCF0001EE013 /* DSystemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSystemViewController.m; path = SystemView/DSystemViewController.m; sourceTree = "<group>"; };
+		659B455918D1FCF0001EE013 /* DSystemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DSystemViewController.xib; path = SystemView/DSystemViewController.xib; sourceTree = "<group>"; };
+		659B455E18D1FE92001EE013 /* DColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DColor.h; sourceTree = "<group>"; };
+		659B455F18D1FE92001EE013 /* DColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DColor.m; sourceTree = "<group>"; };
+		659B456018D1FE92001EE013 /* DImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DImage.h; sourceTree = "<group>"; };
+		659B456118D1FE92001EE013 /* DImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DImage.m; sourceTree = "<group>"; };
+		659B456218D1FE92001EE013 /* DObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DObject.h; sourceTree = "<group>"; };
+		659B456318D1FE92001EE013 /* DObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DObject.m; sourceTree = "<group>"; };
+		659B456418D1FE92001EE013 /* DSkin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSkin.h; sourceTree = "<group>"; };
+		659B456518D1FE92001EE013 /* DSkin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSkin.m; sourceTree = "<group>"; };
+		659B456718D1FE92001EE013 /* DBaseSkin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBaseSkin.h; sourceTree = "<group>"; };
+		659B456818D1FE92001EE013 /* DBaseSkin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBaseSkin.m; sourceTree = "<group>"; };
+		659B456918D1FE92001EE013 /* DDayTimeSkin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDayTimeSkin.h; sourceTree = "<group>"; };
+		659B456A18D1FE92001EE013 /* DDayTimeSkin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDayTimeSkin.m; sourceTree = "<group>"; };
+		659B456B18D1FE92001EE013 /* DNightSkin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNightSkin.h; sourceTree = "<group>"; };
+		659B456C18D1FE92001EE013 /* DNightSkin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNightSkin.m; sourceTree = "<group>"; };
+		659B456D18D1FE92001EE013 /* DSkinProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSkinProtocol.h; sourceTree = "<group>"; };
+		659B456F18D1FE92001EE013 /* UIImageView+skin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+skin.h"; sourceTree = "<group>"; };
+		659B457018D1FE92001EE013 /* UIImageView+skin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+skin.m"; sourceTree = "<group>"; };
+		659B457118D1FE92001EE013 /* UIView+skin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+skin.h"; sourceTree = "<group>"; };
+		659B457218D1FE92001EE013 /* UIView+skin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+skin.m"; sourceTree = "<group>"; };
+		659B457D18D20129001EE013 /* daytime.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = daytime.plist; sourceTree = "<group>"; };
+		659B457E18D20129001EE013 /* night.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = night.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		659B451E18D1F8CD001EE013 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				659B452718D1F8CD001EE013 /* CoreGraphics.framework in Frameworks */,
+				659B452918D1F8CD001EE013 /* UIKit.framework in Frameworks */,
+				659B452518D1F8CD001EE013 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		659B453918D1F8CE001EE013 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				659B453E18D1F8CE001EE013 /* XCTest.framework in Frameworks */,
+				659B454018D1F8CE001EE013 /* UIKit.framework in Frameworks */,
+				659B453F18D1F8CE001EE013 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		659B451818D1F8CD001EE013 = {
+			isa = PBXGroup;
+			children = (
+				659B457C18D20129001EE013 /* SkinResource */,
+				659B455C18D1FE92001EE013 /* Skin */,
+				659B452A18D1F8CE001EE013 /* DSkinDemo */,
+				659B454318D1F8CE001EE013 /* DSkinDemoTests */,
+				659B452318D1F8CD001EE013 /* Frameworks */,
+				659B452218D1F8CD001EE013 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		659B452218D1F8CD001EE013 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				659B452118D1F8CD001EE013 /* DSkinDemo.app */,
+				659B453C18D1F8CE001EE013 /* DSkinDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		659B452318D1F8CD001EE013 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				659B452418D1F8CD001EE013 /* Foundation.framework */,
+				659B452618D1F8CD001EE013 /* CoreGraphics.framework */,
+				659B452818D1F8CD001EE013 /* UIKit.framework */,
+				659B453D18D1F8CE001EE013 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		659B452A18D1F8CE001EE013 /* DSkinDemo */ = {
+			isa = PBXGroup;
+			children = (
+				659B455618D1FBC9001EE013 /* SystemVIew */,
+				659B453318D1F8CE001EE013 /* DAppDelegate.h */,
+				659B453418D1F8CE001EE013 /* DAppDelegate.m */,
+				659B453618D1F8CE001EE013 /* Images.xcassets */,
+				659B452B18D1F8CE001EE013 /* Supporting Files */,
+				659B455318D1F900001EE013 /* DMainViewController.h */,
+				659B455418D1F900001EE013 /* DMainViewController.m */,
+			);
+			path = DSkinDemo;
+			sourceTree = "<group>";
+		};
+		659B452B18D1F8CE001EE013 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				659B452C18D1F8CE001EE013 /* DSkinDemo-Info.plist */,
+				659B452D18D1F8CE001EE013 /* InfoPlist.strings */,
+				659B453018D1F8CE001EE013 /* main.m */,
+				659B453218D1F8CE001EE013 /* DSkinDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		659B454318D1F8CE001EE013 /* DSkinDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				659B454918D1F8CE001EE013 /* DSkinDemoTests.m */,
+				659B454418D1F8CE001EE013 /* Supporting Files */,
+			);
+			path = DSkinDemoTests;
+			sourceTree = "<group>";
+		};
+		659B454418D1F8CE001EE013 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				659B454518D1F8CE001EE013 /* DSkinDemoTests-Info.plist */,
+				659B454618D1F8CE001EE013 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		659B455618D1FBC9001EE013 /* SystemVIew */ = {
+			isa = PBXGroup;
+			children = (
+				659B455718D1FCF0001EE013 /* DSystemViewController.h */,
+				659B455818D1FCF0001EE013 /* DSystemViewController.m */,
+				659B455918D1FCF0001EE013 /* DSystemViewController.xib */,
+			);
+			name = SystemVIew;
+			sourceTree = "<group>";
+		};
+		659B455C18D1FE92001EE013 /* Skin */ = {
+			isa = PBXGroup;
+			children = (
+				659B455D18D1FE92001EE013 /* DObject */,
+				659B456418D1FE92001EE013 /* DSkin.h */,
+				659B456518D1FE92001EE013 /* DSkin.m */,
+				659B456618D1FE92001EE013 /* Skin */,
+				659B456E18D1FE92001EE013 /* UIKit+Skin */,
+			);
+			name = Skin;
+			path = ../Skin;
+			sourceTree = "<group>";
+		};
+		659B455D18D1FE92001EE013 /* DObject */ = {
+			isa = PBXGroup;
+			children = (
+				659B455E18D1FE92001EE013 /* DColor.h */,
+				659B455F18D1FE92001EE013 /* DColor.m */,
+				659B456018D1FE92001EE013 /* DImage.h */,
+				659B456118D1FE92001EE013 /* DImage.m */,
+				659B456218D1FE92001EE013 /* DObject.h */,
+				659B456318D1FE92001EE013 /* DObject.m */,
+			);
+			path = DObject;
+			sourceTree = "<group>";
+		};
+		659B456618D1FE92001EE013 /* Skin */ = {
+			isa = PBXGroup;
+			children = (
+				659B456718D1FE92001EE013 /* DBaseSkin.h */,
+				659B456818D1FE92001EE013 /* DBaseSkin.m */,
+				659B456918D1FE92001EE013 /* DDayTimeSkin.h */,
+				659B456A18D1FE92001EE013 /* DDayTimeSkin.m */,
+				659B456B18D1FE92001EE013 /* DNightSkin.h */,
+				659B456C18D1FE92001EE013 /* DNightSkin.m */,
+				659B456D18D1FE92001EE013 /* DSkinProtocol.h */,
+			);
+			path = Skin;
+			sourceTree = "<group>";
+		};
+		659B456E18D1FE92001EE013 /* UIKit+Skin */ = {
+			isa = PBXGroup;
+			children = (
+				659B456F18D1FE92001EE013 /* UIImageView+skin.h */,
+				659B457018D1FE92001EE013 /* UIImageView+skin.m */,
+				659B457118D1FE92001EE013 /* UIView+skin.h */,
+				659B457218D1FE92001EE013 /* UIView+skin.m */,
+			);
+			path = "UIKit+Skin";
+			sourceTree = "<group>";
+		};
+		659B457C18D20129001EE013 /* SkinResource */ = {
+			isa = PBXGroup;
+			children = (
+				659B457D18D20129001EE013 /* daytime.plist */,
+				659B457E18D20129001EE013 /* night.plist */,
+			);
+			name = SkinResource;
+			path = ../SkinResource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		659B452018D1F8CD001EE013 /* DSkinDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 659B454D18D1F8CE001EE013 /* Build configuration list for PBXNativeTarget "DSkinDemo" */;
+			buildPhases = (
+				659B451D18D1F8CD001EE013 /* Sources */,
+				659B451E18D1F8CD001EE013 /* Frameworks */,
+				659B451F18D1F8CD001EE013 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DSkinDemo;
+			productName = DSkinDemo;
+			productReference = 659B452118D1F8CD001EE013 /* DSkinDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		659B453B18D1F8CE001EE013 /* DSkinDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 659B455018D1F8CE001EE013 /* Build configuration list for PBXNativeTarget "DSkinDemoTests" */;
+			buildPhases = (
+				659B453818D1F8CE001EE013 /* Sources */,
+				659B453918D1F8CE001EE013 /* Frameworks */,
+				659B453A18D1F8CE001EE013 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				659B454218D1F8CE001EE013 /* PBXTargetDependency */,
+			);
+			name = DSkinDemoTests;
+			productName = DSkinDemoTests;
+			productReference = 659B453C18D1F8CE001EE013 /* DSkinDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		659B451918D1F8CD001EE013 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = D;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = daniel;
+				TargetAttributes = {
+					659B453B18D1F8CE001EE013 = {
+						TestTargetID = 659B452018D1F8CD001EE013;
+					};
+				};
+			};
+			buildConfigurationList = 659B451C18D1F8CD001EE013 /* Build configuration list for PBXProject "DSkinDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 659B451818D1F8CD001EE013;
+			productRefGroup = 659B452218D1F8CD001EE013 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				659B452018D1F8CD001EE013 /* DSkinDemo */,
+				659B453B18D1F8CE001EE013 /* DSkinDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		659B451F18D1F8CD001EE013 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				659B458018D20129001EE013 /* night.plist in Resources */,
+				659B457F18D20129001EE013 /* daytime.plist in Resources */,
+				659B452F18D1F8CE001EE013 /* InfoPlist.strings in Resources */,
+				659B453718D1F8CE001EE013 /* Images.xcassets in Resources */,
+				659B455B18D1FCF0001EE013 /* DSystemViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		659B453A18D1F8CE001EE013 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				659B454818D1F8CE001EE013 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		659B451D18D1F8CD001EE013 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				659B453118D1F8CE001EE013 /* main.m in Sources */,
+				659B457818D1FE92001EE013 /* DDayTimeSkin.m in Sources */,
+				659B455518D1F900001EE013 /* DMainViewController.m in Sources */,
+				659B455A18D1FCF0001EE013 /* DSystemViewController.m in Sources */,
+				659B457918D1FE92001EE013 /* DNightSkin.m in Sources */,
+				659B457A18D1FE92001EE013 /* UIImageView+skin.m in Sources */,
+				659B457618D1FE92001EE013 /* DSkin.m in Sources */,
+				659B457518D1FE92001EE013 /* DObject.m in Sources */,
+				659B457B18D1FE92001EE013 /* UIView+skin.m in Sources */,
+				659B453518D1F8CE001EE013 /* DAppDelegate.m in Sources */,
+				659B457418D1FE92001EE013 /* DImage.m in Sources */,
+				659B457718D1FE92001EE013 /* DBaseSkin.m in Sources */,
+				659B457318D1FE92001EE013 /* DColor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		659B453818D1F8CE001EE013 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				659B454A18D1F8CE001EE013 /* DSkinDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		659B454218D1F8CE001EE013 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 659B452018D1F8CD001EE013 /* DSkinDemo */;
+			targetProxy = 659B454118D1F8CE001EE013 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		659B452D18D1F8CE001EE013 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				659B452E18D1F8CE001EE013 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		659B454618D1F8CE001EE013 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				659B454718D1F8CE001EE013 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		659B454B18D1F8CE001EE013 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		659B454C18D1F8CE001EE013 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		659B454E18D1F8CE001EE013 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DSkinDemo/DSkinDemo-Prefix.pch";
+				INFOPLIST_FILE = "DSkinDemo/DSkinDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		659B454F18D1F8CE001EE013 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DSkinDemo/DSkinDemo-Prefix.pch";
+				INFOPLIST_FILE = "DSkinDemo/DSkinDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		659B455118D1F8CE001EE013 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DSkinDemo.app/DSkinDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DSkinDemo/DSkinDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DSkinDemoTests/DSkinDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		659B455218D1F8CE001EE013 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DSkinDemo.app/DSkinDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DSkinDemo/DSkinDemo-Prefix.pch";
+				INFOPLIST_FILE = "DSkinDemoTests/DSkinDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		659B451C18D1F8CD001EE013 /* Build configuration list for PBXProject "DSkinDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				659B454B18D1F8CE001EE013 /* Debug */,
+				659B454C18D1F8CE001EE013 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		659B454D18D1F8CE001EE013 /* Build configuration list for PBXNativeTarget "DSkinDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				659B454E18D1F8CE001EE013 /* Debug */,
+				659B454F18D1F8CE001EE013 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		659B455018D1F8CE001EE013 /* Build configuration list for PBXNativeTarget "DSkinDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				659B455118D1F8CE001EE013 /* Debug */,
+				659B455218D1F8CE001EE013 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 659B451918D1F8CD001EE013 /* Project object */;
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>image</key>
+	<dict>
+		<key>icon1</key>
+		<string>2</string>
+		<key>icon2</key>
+		<string>2</string>
+	</dict>
+	<key>color</key>
+	<dict>
+		<key>light</key>
+		<string>(123,123,244,255)</string>
+		<key>dark</key>
+		<string>(23,35,123,255)</string>
+		<key>text</key>
+		<string>(200,200,200,255)</string>
+		<key>textSel</key>
+		<string>(200,20,120,255)</string>
+		<key>on</key>
+		<string>(10,10,200,255)</string>
+		<key>bg</key>
+		<string>(20,20,20,255)</string>
+		<key>min</key>
+		<string>(20,20,200,255)</string>
+		<key>max</key>
+		<string>(200,20,200,255)</string>
+		<key>activity</key>
+		<string>(20,200,200,255)</string>
+	</dict>
+</dict>
+</plist>
