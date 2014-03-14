@@ -34,6 +34,11 @@ NSString * const DSkinNeedDisplayNotification = @"DSkinNeedDisplayNotification";
     return [_skinImp imageNameForKey:key];
 }
 
+- (UIImage *)imageForKey:(NSString *)key
+{
+    return [_skinImp imageForKey:key];
+}
+
 - (UIColor *)colorForKey:(NSString *)key
 {
     return [_skinImp colorForKey:key];

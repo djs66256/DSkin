@@ -56,10 +56,16 @@ static const char DCustomBackgroundColorKey;
 
 - (void)setNeedDisplaySkin
 {
-    [self setNeedsDisplay];
     UIColor *bgColor = self.backgroundColor;
     if ([bgColor isKindOfClass:[DObject class]]) {
-        self.backgroundColor = bgColor;
+        self.backgroundColor = [bgColor copy];
+    }
+    
+    if ([self respondsToSelector:@selector(tintColor)]) {
+        UIColor *tintColor = self.tintColor;
+        if ([tintColor isKindOfClass:[DObject class]]) {
+            self.tintColor = [tintColor copy];
+        }
     }
 }
 

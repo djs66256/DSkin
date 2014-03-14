@@ -11,6 +11,7 @@
 @protocol DSkinProtocol <NSObject>
 
 - (NSString *)imageNameForKey:(NSString *)key;
+- (UIImage *)imageForKey:(NSString *)key;
 - (UIColor *)colorForKey:(NSString *)key;
 
 @end

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		657610F318D35A2E00D34ECF /* UITextView+skin.m in Sources */ = {isa = PBXBuildFile; fileRef = 657610F218D35A2E00D34ECF /* UITextView+skin.m */; };
+		657610F918D35B0A00D34ECF /* UISwitch+skin.m in Sources */ = {isa = PBXBuildFile; fileRef = 657610F818D35B0A00D34ECF /* UISwitch+skin.m */; };
+		657610FC18D35C6E00D34ECF /* UISlider+skin.m in Sources */ = {isa = PBXBuildFile; fileRef = 657610FB18D35C6E00D34ECF /* UISlider+skin.m */; };
+		657610FF18D35E6E00D34ECF /* UILabel+skin.m in Sources */ = {isa = PBXBuildFile; fileRef = 657610FE18D35E6E00D34ECF /* UILabel+skin.m */; };
+		6576110218D35F6D00D34ECF /* UIActivityIndicatorView+skin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6576110118D35F6D00D34ECF /* UIActivityIndicatorView+skin.m */; };
 		659B452518D1F8CD001EE013 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659B452418D1F8CD001EE013 /* Foundation.framework */; };
 		659B452718D1F8CD001EE013 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659B452618D1F8CD001EE013 /* CoreGraphics.framework */; };
 		659B452918D1F8CD001EE013 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659B452818D1F8CD001EE013 /* UIKit.framework */; };
@@ -33,6 +38,7 @@
 		659B457B18D1FE92001EE013 /* UIView+skin.m in Sources */ = {isa = PBXBuildFile; fileRef = 659B457218D1FE92001EE013 /* UIView+skin.m */; };
 		659B457F18D20129001EE013 /* daytime.plist in Resources */ = {isa = PBXBuildFile; fileRef = 659B457D18D20129001EE013 /* daytime.plist */; };
 		659B458018D20129001EE013 /* night.plist in Resources */ = {isa = PBXBuildFile; fileRef = 659B457E18D20129001EE013 /* night.plist */; };
+		659FD9AF18D3375300C15E9B /* UITextField+skin.m in Sources */ = {isa = PBXBuildFile; fileRef = 659FD9AE18D3375300C15E9B /* UITextField+skin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +52,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		657610F118D35A2E00D34ECF /* UITextView+skin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+skin.h"; sourceTree = "<group>"; };
+		657610F218D35A2E00D34ECF /* UITextView+skin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+skin.m"; sourceTree = "<group>"; };
+		657610F718D35B0A00D34ECF /* UISwitch+skin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISwitch+skin.h"; sourceTree = "<group>"; };
+		657610F818D35B0A00D34ECF /* UISwitch+skin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISwitch+skin.m"; sourceTree = "<group>"; };
+		657610FA18D35C6E00D34ECF /* UISlider+skin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISlider+skin.h"; sourceTree = "<group>"; };
+		657610FB18D35C6E00D34ECF /* UISlider+skin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISlider+skin.m"; sourceTree = "<group>"; };
+		657610FD18D35E6E00D34ECF /* UILabel+skin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+skin.h"; sourceTree = "<group>"; };
+		657610FE18D35E6E00D34ECF /* UILabel+skin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+skin.m"; sourceTree = "<group>"; };
+		6576110018D35F6D00D34ECF /* UIActivityIndicatorView+skin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+skin.h"; sourceTree = "<group>"; };
+		6576110118D35F6D00D34ECF /* UIActivityIndicatorView+skin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActivityIndicatorView+skin.m"; sourceTree = "<group>"; };
 		659B452118D1F8CD001EE013 /* DSkinDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSkinDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		659B452418D1F8CD001EE013 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		659B452618D1F8CD001EE013 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -88,6 +104,8 @@
 		659B457218D1FE92001EE013 /* UIView+skin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+skin.m"; sourceTree = "<group>"; };
 		659B457D18D20129001EE013 /* daytime.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = daytime.plist; sourceTree = "<group>"; };
 		659B457E18D20129001EE013 /* night.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = night.plist; sourceTree = "<group>"; };
+		659FD9AD18D3375300C15E9B /* UITextField+skin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+skin.h"; sourceTree = "<group>"; };
+		659FD9AE18D3375300C15E9B /* UITextField+skin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+skin.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +264,18 @@
 				659B457018D1FE92001EE013 /* UIImageView+skin.m */,
 				659B457118D1FE92001EE013 /* UIView+skin.h */,
 				659B457218D1FE92001EE013 /* UIView+skin.m */,
+				659FD9AD18D3375300C15E9B /* UITextField+skin.h */,
+				659FD9AE18D3375300C15E9B /* UITextField+skin.m */,
+				657610F118D35A2E00D34ECF /* UITextView+skin.h */,
+				657610F218D35A2E00D34ECF /* UITextView+skin.m */,
+				657610F718D35B0A00D34ECF /* UISwitch+skin.h */,
+				657610F818D35B0A00D34ECF /* UISwitch+skin.m */,
+				657610FA18D35C6E00D34ECF /* UISlider+skin.h */,
+				657610FB18D35C6E00D34ECF /* UISlider+skin.m */,
+				657610FD18D35E6E00D34ECF /* UILabel+skin.h */,
+				657610FE18D35E6E00D34ECF /* UILabel+skin.m */,
+				6576110018D35F6D00D34ECF /* UIActivityIndicatorView+skin.h */,
+				6576110118D35F6D00D34ECF /* UIActivityIndicatorView+skin.m */,
 			);
 			path = "UIKit+Skin";
 			sourceTree = "<group>";
@@ -361,16 +391,22 @@
 			files = (
 				659B453118D1F8CE001EE013 /* main.m in Sources */,
 				659B457818D1FE92001EE013 /* DDayTimeSkin.m in Sources */,
+				659FD9AF18D3375300C15E9B /* UITextField+skin.m in Sources */,
 				659B455518D1F900001EE013 /* DMainViewController.m in Sources */,
 				659B455A18D1FCF0001EE013 /* DSystemViewController.m in Sources */,
 				659B457918D1FE92001EE013 /* DNightSkin.m in Sources */,
 				659B457A18D1FE92001EE013 /* UIImageView+skin.m in Sources */,
+				657610FC18D35C6E00D34ECF /* UISlider+skin.m in Sources */,
 				659B457618D1FE92001EE013 /* DSkin.m in Sources */,
 				659B457518D1FE92001EE013 /* DObject.m in Sources */,
 				659B457B18D1FE92001EE013 /* UIView+skin.m in Sources */,
+				657610F918D35B0A00D34ECF /* UISwitch+skin.m in Sources */,
 				659B453518D1F8CE001EE013 /* DAppDelegate.m in Sources */,
 				659B457418D1FE92001EE013 /* DImage.m in Sources */,
+				6576110218D35F6D00D34ECF /* UIActivityIndicatorView+skin.m in Sources */,
 				659B457718D1FE92001EE013 /* DBaseSkin.m in Sources */,
+				657610FF18D35E6E00D34ECF /* UILabel+skin.m in Sources */,
+				657610F318D35A2E00D34ECF /* UITextView+skin.m in Sources */,
 				659B457318D1FE92001EE013 /* DColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -574,6 +610,7 @@
 				659B454F18D1F8CE001EE013 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		659B455018D1F8CE001EE013 /* Build configuration list for PBXNativeTarget "DSkinDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -582,6 +619,7 @@
 				659B455218D1F8CE001EE013 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

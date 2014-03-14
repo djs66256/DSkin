@@ -8,6 +8,8 @@
 
 #import "DSystemViewController.h"
 #import "DSkin.h"
+#import "UIView+skin.h"
+#import "UITextField+skin.h"
 #import "DBaseSkin.h"
 
 @interface DSystemViewController ()
@@ -39,12 +41,6 @@
     self.textView.backgroundColor = [DColor colorForKey:@"bg"];
     UIColor *bg = [DColor colorForKey:@"bg"];
     self.view.backgroundColor = bg;
-    UIColor *aftbg = self.view.backgroundColor;
-   BOOL isD = [self.view.backgroundColor isKindOfClass:[DObject class]];
-    
-    if (isD) {
-        
-    }
     
     [self.button setTitleColor:[DColor colorForKey:@"text"] forState:UIControlStateNormal];
     [self.button setTitleColor:[DColor colorForKey:@"textSel"] forState:UIControlStateHighlighted];

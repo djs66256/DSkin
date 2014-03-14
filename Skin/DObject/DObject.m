@@ -12,17 +12,17 @@
 @implementation DObject
 @dynamic object;
 
-// cannot copy, but only retain
 - (id)copy
 {
-    DObject *copyItem = self;
+    DObject *copyItem = [[[self class] alloc] init];
+    copyItem.key = self.key;
+    copyItem.object = self.object;
     return copyItem;
 }
 
 - (id)mutableCopy
 {
-    DObject *copyItem = self;
-    return copyItem;
+    return [self copy];
 }
 
 - (id)init

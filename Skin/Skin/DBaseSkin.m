@@ -61,12 +61,37 @@
     [imageDict enumerateKeysAndObjectsUsingBlock:^(NSString *key, NSString *obj, BOOL *stop) {
         imageSkinDict[key] = obj;
     }];
-    _skinDict[@"image"] = imageSkinDict;
+    _skinDict[@"imageName"] = imageSkinDict;
 }
 
 - (NSString *)imageNameForKey:(NSString *)key
 {
-    return _skinDict[@"image"][key];
+    return _skinDict[@"imageName"][key];
+}
+
+- (UIImage *)clearImage
+{
+    UIGraphicsBeginImageContext(CGSizeMake(2, 2));
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
+}
+
+- (UIImage *)imageForKey:(NSString *)key
+{
+    NSString *imgName = [self imageNameForKey:key];
+    UIImage *image = nil;
+    if (imgName) {
+        image = [UIImage imageNamed:imgName];
+    }
+    if (image == nil) {
+        image = _skinDict[@"image"][@"__clear"];
+        if (image == nil) {
+            image = self.clearImage;
+            _skinDict[@"image"][@"__clear"] = image;
+        }
+    }
+    return image;
 }
 
 - (UIColor *)colorForKey:(NSString *)key

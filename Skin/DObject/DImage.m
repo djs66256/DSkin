@@ -63,12 +63,8 @@
 - (UIImage *)object
 {
     if (self.needReload) {
-        NSString *currentFileName = [[DSkin defaultSkin] imageNameForKey:self.key];
         self.needReload = NO;
-        if (![_fileName isEqualToString:currentFileName]) {
-            self.fileName = currentFileName;
-            _object = [UIImage imageNamed:self.fileName];
-        }
+        _object = [[DSkin defaultSkin] imageForKey:self.key];
     }
     if (_object == nil) {
         _object = [[UIImage alloc] init];
