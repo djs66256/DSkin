@@ -12,6 +12,11 @@
 		657610FC18D35C6E00D34ECF /* UISlider+skin.m in Sources */ = {isa = PBXBuildFile; fileRef = 657610FB18D35C6E00D34ECF /* UISlider+skin.m */; };
 		657610FF18D35E6E00D34ECF /* UILabel+skin.m in Sources */ = {isa = PBXBuildFile; fileRef = 657610FE18D35E6E00D34ECF /* UILabel+skin.m */; };
 		6576110218D35F6D00D34ECF /* UIActivityIndicatorView+skin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6576110118D35F6D00D34ECF /* UIActivityIndicatorView+skin.m */; };
+		6576110518D3652E00D34ECF /* UINavigationBar+skin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6576110418D3652E00D34ECF /* UINavigationBar+skin.m */; };
+		6576110818D3657400D34ECF /* UIProgressView+skin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6576110718D3657400D34ECF /* UIProgressView+skin.m */; };
+		6576110B18D365A500D34ECF /* UISearchBar+skin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6576110A18D365A500D34ECF /* UISearchBar+skin.m */; };
+		6576110E18D365C400D34ECF /* UITabBar+skin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6576110D18D365C400D34ECF /* UITabBar+skin.m */; };
+		6576111118D3663200D34ECF /* UIToolbar+skin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6576111018D3663200D34ECF /* UIToolbar+skin.m */; };
 		659B452518D1F8CD001EE013 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659B452418D1F8CD001EE013 /* Foundation.framework */; };
 		659B452718D1F8CD001EE013 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659B452618D1F8CD001EE013 /* CoreGraphics.framework */; };
 		659B452918D1F8CD001EE013 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659B452818D1F8CD001EE013 /* UIKit.framework */; };
@@ -62,6 +67,16 @@
 		657610FE18D35E6E00D34ECF /* UILabel+skin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+skin.m"; sourceTree = "<group>"; };
 		6576110018D35F6D00D34ECF /* UIActivityIndicatorView+skin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+skin.h"; sourceTree = "<group>"; };
 		6576110118D35F6D00D34ECF /* UIActivityIndicatorView+skin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActivityIndicatorView+skin.m"; sourceTree = "<group>"; };
+		6576110318D3652E00D34ECF /* UINavigationBar+skin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+skin.h"; sourceTree = "<group>"; };
+		6576110418D3652E00D34ECF /* UINavigationBar+skin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+skin.m"; sourceTree = "<group>"; };
+		6576110618D3657400D34ECF /* UIProgressView+skin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+skin.h"; sourceTree = "<group>"; };
+		6576110718D3657400D34ECF /* UIProgressView+skin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+skin.m"; sourceTree = "<group>"; };
+		6576110918D365A500D34ECF /* UISearchBar+skin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+skin.h"; sourceTree = "<group>"; };
+		6576110A18D365A500D34ECF /* UISearchBar+skin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+skin.m"; sourceTree = "<group>"; };
+		6576110C18D365C400D34ECF /* UITabBar+skin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+skin.h"; sourceTree = "<group>"; };
+		6576110D18D365C400D34ECF /* UITabBar+skin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+skin.m"; sourceTree = "<group>"; };
+		6576110F18D3663200D34ECF /* UIToolbar+skin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIToolbar+skin.h"; sourceTree = "<group>"; };
+		6576111018D3663200D34ECF /* UIToolbar+skin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIToolbar+skin.m"; sourceTree = "<group>"; };
 		659B452118D1F8CD001EE013 /* DSkinDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSkinDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		659B452418D1F8CD001EE013 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		659B452618D1F8CD001EE013 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -260,8 +275,6 @@
 		659B456E18D1FE92001EE013 /* UIKit+Skin */ = {
 			isa = PBXGroup;
 			children = (
-				659B456F18D1FE92001EE013 /* UIImageView+skin.h */,
-				659B457018D1FE92001EE013 /* UIImageView+skin.m */,
 				659B457118D1FE92001EE013 /* UIView+skin.h */,
 				659B457218D1FE92001EE013 /* UIView+skin.m */,
 				659FD9AD18D3375300C15E9B /* UITextField+skin.h */,
@@ -274,6 +287,18 @@
 				657610FB18D35C6E00D34ECF /* UISlider+skin.m */,
 				657610FD18D35E6E00D34ECF /* UILabel+skin.h */,
 				657610FE18D35E6E00D34ECF /* UILabel+skin.m */,
+				659B456F18D1FE92001EE013 /* UIImageView+skin.h */,
+				659B457018D1FE92001EE013 /* UIImageView+skin.m */,
+				6576110318D3652E00D34ECF /* UINavigationBar+skin.h */,
+				6576110418D3652E00D34ECF /* UINavigationBar+skin.m */,
+				6576110918D365A500D34ECF /* UISearchBar+skin.h */,
+				6576110A18D365A500D34ECF /* UISearchBar+skin.m */,
+				6576110C18D365C400D34ECF /* UITabBar+skin.h */,
+				6576110D18D365C400D34ECF /* UITabBar+skin.m */,
+				6576110F18D3663200D34ECF /* UIToolbar+skin.h */,
+				6576111018D3663200D34ECF /* UIToolbar+skin.m */,
+				6576110618D3657400D34ECF /* UIProgressView+skin.h */,
+				6576110718D3657400D34ECF /* UIProgressView+skin.m */,
 				6576110018D35F6D00D34ECF /* UIActivityIndicatorView+skin.h */,
 				6576110118D35F6D00D34ECF /* UIActivityIndicatorView+skin.m */,
 			);
@@ -393,20 +418,25 @@
 				659B457818D1FE92001EE013 /* DDayTimeSkin.m in Sources */,
 				659FD9AF18D3375300C15E9B /* UITextField+skin.m in Sources */,
 				659B455518D1F900001EE013 /* DMainViewController.m in Sources */,
+				6576110818D3657400D34ECF /* UIProgressView+skin.m in Sources */,
 				659B455A18D1FCF0001EE013 /* DSystemViewController.m in Sources */,
+				6576110B18D365A500D34ECF /* UISearchBar+skin.m in Sources */,
 				659B457918D1FE92001EE013 /* DNightSkin.m in Sources */,
 				659B457A18D1FE92001EE013 /* UIImageView+skin.m in Sources */,
 				657610FC18D35C6E00D34ECF /* UISlider+skin.m in Sources */,
 				659B457618D1FE92001EE013 /* DSkin.m in Sources */,
 				659B457518D1FE92001EE013 /* DObject.m in Sources */,
+				6576111118D3663200D34ECF /* UIToolbar+skin.m in Sources */,
 				659B457B18D1FE92001EE013 /* UIView+skin.m in Sources */,
 				657610F918D35B0A00D34ECF /* UISwitch+skin.m in Sources */,
 				659B453518D1F8CE001EE013 /* DAppDelegate.m in Sources */,
 				659B457418D1FE92001EE013 /* DImage.m in Sources */,
 				6576110218D35F6D00D34ECF /* UIActivityIndicatorView+skin.m in Sources */,
 				659B457718D1FE92001EE013 /* DBaseSkin.m in Sources */,
+				6576110518D3652E00D34ECF /* UINavigationBar+skin.m in Sources */,
 				657610FF18D35E6E00D34ECF /* UILabel+skin.m in Sources */,
 				657610F318D35A2E00D34ECF /* UITextView+skin.m in Sources */,
+				6576110E18D365C400D34ECF /* UITabBar+skin.m in Sources */,
 				659B457318D1FE92001EE013 /* DColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

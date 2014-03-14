@@ -56,6 +56,8 @@ static const char DCustomBackgroundColorKey;
 
 - (void)setNeedDisplaySkin
 {
+    [self setNeedsDisplay];
+    
     UIColor *bgColor = self.backgroundColor;
     if ([bgColor isKindOfClass:[DObject class]]) {
         self.backgroundColor = [bgColor copy];
