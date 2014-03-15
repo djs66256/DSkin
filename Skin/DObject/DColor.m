@@ -58,6 +58,7 @@
     return [super resolveInstanceMethod:sel] || [InheritanceClass resolveInstanceMethod:sel];
 }
 
+#pragma mark -
 - (UIColor *)object
 {
     if (self.needReload) {

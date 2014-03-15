@@ -9,6 +9,7 @@
 #import "UINavigationBar+skin.h"
 #import "UIView+skin.h"
 #import "DObject.h"
+#import <objc/runtime.h>
 
 @implementation UINavigationBar (skin)
 

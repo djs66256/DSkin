@@ -17,6 +17,8 @@
 		6576110B18D365A500D34ECF /* UISearchBar+skin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6576110A18D365A500D34ECF /* UISearchBar+skin.m */; };
 		6576110E18D365C400D34ECF /* UITabBar+skin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6576110D18D365C400D34ECF /* UITabBar+skin.m */; };
 		6576111118D3663200D34ECF /* UIToolbar+skin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6576111018D3663200D34ECF /* UIToolbar+skin.m */; };
+		6576111318D3694D00D34ECF /* image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6576111218D3694D00D34ECF /* image.xcassets */; };
+		6576111618D431B300D34ECF /* DResizableImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6576111518D431B300D34ECF /* DResizableImage.m */; };
 		659B452518D1F8CD001EE013 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659B452418D1F8CD001EE013 /* Foundation.framework */; };
 		659B452718D1F8CD001EE013 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659B452618D1F8CD001EE013 /* CoreGraphics.framework */; };
 		659B452918D1F8CD001EE013 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659B452818D1F8CD001EE013 /* UIKit.framework */; };
@@ -44,6 +46,7 @@
 		659B457F18D20129001EE013 /* daytime.plist in Resources */ = {isa = PBXBuildFile; fileRef = 659B457D18D20129001EE013 /* daytime.plist */; };
 		659B458018D20129001EE013 /* night.plist in Resources */ = {isa = PBXBuildFile; fileRef = 659B457E18D20129001EE013 /* night.plist */; };
 		659FD9AF18D3375300C15E9B /* UITextField+skin.m in Sources */ = {isa = PBXBuildFile; fileRef = 659FD9AE18D3375300C15E9B /* UITextField+skin.m */; };
+		65A6F46518D48B430014E070 /* DStretchImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A6F46418D48B430014E070 /* DStretchImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +80,9 @@
 		6576110D18D365C400D34ECF /* UITabBar+skin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+skin.m"; sourceTree = "<group>"; };
 		6576110F18D3663200D34ECF /* UIToolbar+skin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIToolbar+skin.h"; sourceTree = "<group>"; };
 		6576111018D3663200D34ECF /* UIToolbar+skin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIToolbar+skin.m"; sourceTree = "<group>"; };
+		6576111218D3694D00D34ECF /* image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = image.xcassets; sourceTree = "<group>"; };
+		6576111418D431B300D34ECF /* DResizableImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DResizableImage.h; sourceTree = "<group>"; };
+		6576111518D431B300D34ECF /* DResizableImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DResizableImage.m; sourceTree = "<group>"; };
 		659B452118D1F8CD001EE013 /* DSkinDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSkinDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		659B452418D1F8CD001EE013 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		659B452618D1F8CD001EE013 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -121,6 +127,8 @@
 		659B457E18D20129001EE013 /* night.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = night.plist; sourceTree = "<group>"; };
 		659FD9AD18D3375300C15E9B /* UITextField+skin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+skin.h"; sourceTree = "<group>"; };
 		659FD9AE18D3375300C15E9B /* UITextField+skin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+skin.m"; sourceTree = "<group>"; };
+		65A6F46318D48B430014E070 /* DStretchImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DStretchImage.h; sourceTree = "<group>"; };
+		65A6F46418D48B430014E070 /* DStretchImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DStretchImage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,12 +256,16 @@
 		659B455D18D1FE92001EE013 /* DObject */ = {
 			isa = PBXGroup;
 			children = (
+				659B456218D1FE92001EE013 /* DObject.h */,
+				659B456318D1FE92001EE013 /* DObject.m */,
 				659B455E18D1FE92001EE013 /* DColor.h */,
 				659B455F18D1FE92001EE013 /* DColor.m */,
 				659B456018D1FE92001EE013 /* DImage.h */,
 				659B456118D1FE92001EE013 /* DImage.m */,
-				659B456218D1FE92001EE013 /* DObject.h */,
-				659B456318D1FE92001EE013 /* DObject.m */,
+				6576111418D431B300D34ECF /* DResizableImage.h */,
+				6576111518D431B300D34ECF /* DResizableImage.m */,
+				65A6F46318D48B430014E070 /* DStretchImage.h */,
+				65A6F46418D48B430014E070 /* DStretchImage.m */,
 			);
 			path = DObject;
 			sourceTree = "<group>";
@@ -310,6 +322,7 @@
 			children = (
 				659B457D18D20129001EE013 /* daytime.plist */,
 				659B457E18D20129001EE013 /* night.plist */,
+				6576111218D3694D00D34ECF /* image.xcassets */,
 			);
 			name = SkinResource;
 			path = ../SkinResource;
@@ -394,6 +407,7 @@
 				659B458018D20129001EE013 /* night.plist in Resources */,
 				659B457F18D20129001EE013 /* daytime.plist in Resources */,
 				659B452F18D1F8CE001EE013 /* InfoPlist.strings in Resources */,
+				6576111318D3694D00D34ECF /* image.xcassets in Resources */,
 				659B453718D1F8CE001EE013 /* Images.xcassets in Resources */,
 				659B455B18D1FCF0001EE013 /* DSystemViewController.xib in Resources */,
 			);
@@ -420,9 +434,11 @@
 				659B455518D1F900001EE013 /* DMainViewController.m in Sources */,
 				6576110818D3657400D34ECF /* UIProgressView+skin.m in Sources */,
 				659B455A18D1FCF0001EE013 /* DSystemViewController.m in Sources */,
+				6576111618D431B300D34ECF /* DResizableImage.m in Sources */,
 				6576110B18D365A500D34ECF /* UISearchBar+skin.m in Sources */,
 				659B457918D1FE92001EE013 /* DNightSkin.m in Sources */,
 				659B457A18D1FE92001EE013 /* UIImageView+skin.m in Sources */,
+				65A6F46518D48B430014E070 /* DStretchImage.m in Sources */,
 				657610FC18D35C6E00D34ECF /* UISlider+skin.m in Sources */,
 				659B457618D1FE92001EE013 /* DSkin.m in Sources */,
 				659B457518D1FE92001EE013 /* DObject.m in Sources */,
@@ -561,6 +577,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DSkinDemo/DSkinDemo-Prefix.pch";
 				INFOPLIST_FILE = "DSkinDemo/DSkinDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -574,6 +591,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DSkinDemo/DSkinDemo-Prefix.pch";
 				INFOPLIST_FILE = "DSkinDemo/DSkinDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

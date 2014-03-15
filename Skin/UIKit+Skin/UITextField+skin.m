@@ -20,6 +20,16 @@
     if ([textColor isKindOfClass:[DObject class]]) {
         self.textColor = [textColor copy];
     }
+    
+    UIImage *background = self.background;
+    if ([background isKindOfClass:[DObject class]]) {
+        self.background = [background copy];
+    }
+    
+    UIImage *disabledBackground = self.disabledBackground;
+    if ([disabledBackground isKindOfClass:[DObject class]]) {
+        self.disabledBackground = [disabledBackground copy];
+    }
 }
 
 @end

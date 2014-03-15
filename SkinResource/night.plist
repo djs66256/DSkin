@@ -4,10 +4,12 @@
 <dict>
 	<key>image</key>
 	<dict>
-		<key>icon1</key>
-		<string>2</string>
+		<key>qq</key>
+		<string>qq_night</string>
 		<key>icon2</key>
 		<string>2</string>
+		<key>btn</key>
+		<string>btn_night</string>
 	</dict>
 	<key>color</key>
 	<dict>
@@ -22,13 +24,13 @@
 		<key>on</key>
 		<string>(10,10,200,255)</string>
 		<key>bg</key>
-		<string>(20,20,20,255)</string>
+		<string>(50,50,50,255)</string>
 		<key>min</key>
-		<string>(20,20,200,255)</string>
+		<string>(200,0,0,255)</string>
 		<key>max</key>
-		<string>(200,20,200,255)</string>
+		<string>(10,20,200,255)</string>
 		<key>activity</key>
-		<string>(20,200,200,255)</string>
+		<string>(200,200,200,255)</string>
 	</dict>
 </dict>
 </plist>

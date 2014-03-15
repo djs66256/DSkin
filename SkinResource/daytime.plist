@@ -13,20 +13,20 @@
 		<key>textSel</key>
 		<string>(120,120,120,255)</string>
 		<key>on</key>
-		<string>(10,200,200,255)</string>
+		<string>(10,250,250,255)</string>
 		<key>bg</key>
 		<string>(200,200,200,255)</string>
 		<key>min</key>
-		<string>(20,200,20,255)</string>
+		<string>(10,250,10,255)</string>
 		<key>max</key>
-		<string>(200,20,20,255)</string>
+		<string>(250,10,10,255)</string>
 		<key>activity</key>
-		<string>(20,20,200,255)</string>
+		<string>(0,0,250,255)</string>
 	</dict>
 	<key>image</key>
 	<dict>
-		<key>icon1</key>
-		<string>1</string>
+		<key>qq</key>
+		<string>qq_day</string>
 		<key>icon2</key>
 		<string>2</string>
 	</dict>

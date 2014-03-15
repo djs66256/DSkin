@@ -33,7 +33,7 @@
     if ([self respondsToSelector:@selector(thumbTintColor)]) {
         UIColor *thumbTint = self.thumbTintColor;
         if ([thumbTint isKindOfClass:[DObject class]]) {
-            self.thumbTintColor = thumbTint;
+            self.thumbTintColor = [thumbTint copy];
         }
     }
 }

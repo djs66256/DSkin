@@ -59,8 +59,21 @@
     
     self.stepper.tintColor = [DColor colorForKey:@"on"];
     
-    self.imageView.image = [DImage imageForKey:@"image"];
+    self.imageView.image = [[DImage imageForKey:@"qq"] stretchableImageWithLeftCapWidth:20 topCapHeight:20];
+    self.textField.background = [DImage imageForKey:@"qq"];
+    self.switcher.onImage = [DImage imageForKey:@"qq"];
+    self.switcher.offImage = [DImage imageForKey:@"qq"];
     
+    self.slider.minimumValueImage = [DImage imageForKey:@"qq"];
+    self.slider.maximumValueImage = [DImage imageForKey:@"qq"];
+    [self.slider setThumbImage:[DImage imageForKey:@"qq"] forState:UIControlStateNormal];
+    
+//    [self.navigationController.navigationBar setBackgroundImage: [[DImage imageForKey:@"qq"] resizableImageWithCapInsets:UIEdgeInsetsMake(20, 20, 20, 20)] forBarMetrics:UIBarMetricsDefault];
+    self.navigationController.navigationBar.tintColor = [DColor colorForKey:@"min"];
+    self.navigationController.navigationBar.backgroundColor = [DColor colorForKey:@"max"];
+//    self.navigationController.navigationBar.shadowImage= [[DImage imageForKey:@"qq"] resizableImageWithCapInsets:UIEdgeInsetsMake(10, 10, 10, 10)];
+    
+    [self.button setBackgroundImage:[[DImage imageForKey:@"btn"] stretchableImageWithLeftCapWidth:7 topCapHeight:15] forState:UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning

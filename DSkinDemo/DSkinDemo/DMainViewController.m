@@ -67,6 +67,10 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     cell.textLabel.text = self.dataSource[indexPath.row][@"text"];
+    UIImageView *bg = [[UIImageView alloc] initWithImage:[[DImage imageForKey:@"qq"] stretchableImageWithLeftCapWidth:50 topCapHeight:50]];
+    bg.frame = CGRectMake(0, 0, 320, 44);
+    cell.textLabel.backgroundColor = [UIColor clearColor];
+    cell.backgroundView = bg;
     
     return cell;
 }

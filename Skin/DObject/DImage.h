@@ -8,10 +8,11 @@
 
 #import "DObject.h"
 
-@interface DImage : DObject
+@interface DImage : DObject {
+    UIImage *_object;
+}
 
 @property (nonatomic, strong) UIImage *object;
-@property (nonatomic, strong) NSString *fileName;
 
 + (UIImage *)imageForKey:(NSString *)key;
 
