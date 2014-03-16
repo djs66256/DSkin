@@ -52,6 +52,7 @@
     static BOOL b=NO;
     b=!b;
     [[DSkin defaultSkin] setSkin:[[DBaseSkin alloc] initWithFileName:b?@"night":@"daytime"]];
+    [[DSkin defaultSkin] setNeedDisplayAllView];
 }
 
 #pragma mark - Table view data source
@@ -70,6 +71,7 @@
     UIImageView *bg = [[UIImageView alloc] initWithImage:[[DImage imageForKey:@"qq"] stretchableImageWithLeftCapWidth:50 topCapHeight:50]];
     bg.frame = CGRectMake(0, 0, 320, 44);
     cell.textLabel.backgroundColor = [UIColor clearColor];
+    cell.backgroundColor = [DColor colorForKey:@"bg"];
     cell.backgroundView = bg;
     
     return cell;

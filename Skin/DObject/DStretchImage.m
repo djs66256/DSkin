@@ -10,6 +10,19 @@
 
 @implementation DStretchImage
 
+- (id)copy
+{
+    DStretchImage *image = [super copy];
+    image.leftCapinset = _leftCapinset;
+    image.topCapinset = _topCapinset;
+    return image;
+}
+
+- (id)mutableCopy
+{
+    return [self copy];
+}
+
 - (UIImage *)object
 {
     if (self.needReload) {

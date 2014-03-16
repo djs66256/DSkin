@@ -8,7 +8,7 @@
 
 #import "DImage.h"
 
-@interface DStretchImage : DImage 
+@interface DStretchImage : DImage
 
 @property (nonatomic) NSInteger leftCapinset;
 @property (nonatomic) NSInteger topCapinset;

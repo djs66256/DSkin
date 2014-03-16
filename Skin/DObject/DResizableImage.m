@@ -21,6 +21,19 @@
     return self;
 }
 
+- (id)copy
+{
+    DResizableImage *image = [super copy];
+    image.resizingMode = _resizingMode;
+    image.capInsets = _capInsets;
+    return image;
+}
+
+- (id)mutableCopy
+{
+    return [self copy];
+}
+
 - (UIImage *)object
 {
     if (self.needReload) {

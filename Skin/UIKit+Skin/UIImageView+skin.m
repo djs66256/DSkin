@@ -18,23 +18,25 @@
     
     if ([self.image isKindOfClass:[DObject class]]) {
         UIImage *image = self.image;
-        self.image = nil;
-        self.image = image;
+        self.image = [image copy];
     }
     
     if ([self.highlightedImage isKindOfClass:[DObject class]]) {
         UIImage *highlightImage = self.highlightedImage;
-        self.highlightedImage = nil;
-        self.highlightedImage = highlightImage;
+        self.highlightedImage = [highlightImage copy];
     }
     
     NSArray *animImages = self.animationImages;
-    self.animationImages = nil;
-    self.animationImages = animImages;
+    if (animImages) {
+        self.animationImages = nil;
+        self.animationImages = animImages;
+    }
     
     NSArray *highlightedAnimImages = self.highlightedAnimationImages;
-    self.highlightedAnimationImages = nil;
-    self.highlightedAnimationImages = highlightedAnimImages;
+    if (highlightedAnimImages) {
+        self.highlightedAnimationImages = nil;
+        self.highlightedAnimationImages = highlightedAnimImages;
+    }
 }
 
 @end
