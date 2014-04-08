@@ -103,4 +103,48 @@
     return method;
 }
 
+
++ (BOOL)instancesRespondToSelector:(SEL)aSelector
+{
+    return [self instancesRespondToSelector:aSelector] || [[self objectClass] instancesRespondToSelector:aSelector];
+}
+
++ (BOOL)conformsToProtocol:(Protocol *)protocol
+{
+    return [self conformsToProtocol:protocol] || [[self objectClass] conformsToProtocol:protocol];
+}
+
++ (IMP)instanceMethodForSelector:(SEL)aSelector
+{
+    IMP imp = [self instanceMethodForSelector:aSelector];
+    if (imp == NULL) {
+        imp = [[self objectClass] instanceMethodForSelector:aSelector];
+    }
+    return imp;
+}
+
++ (NSMethodSignature *)instanceMethodSignatureForSelector:(SEL)aSelector
+{
+    NSMethodSignature *method = [self instanceMethodSignatureForSelector:aSelector];
+    if (method == NULL) {
+        method = [[self objectClass] instanceMethodSignatureForSelector:aSelector];
+    }
+    return method;
+}
+
++ (BOOL)resolveClassMethod:(SEL)sel
+{
+    return [self resolveClassMethod:sel] || [[self objectClass] resolveClassMethod:sel];
+}
+
++ (BOOL)resolveInstanceMethod:(SEL)sel
+{
+    return [super resolveInstanceMethod:sel] || [[self objectClass] resolveInstanceMethod:sel];
+}
+
++ (Class)objectClass
+{
+    return [NSObject class];
+}
+
 @end

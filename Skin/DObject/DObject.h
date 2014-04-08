@@ -16,4 +16,6 @@
 @property (nonatomic, strong) NSString *key;
 @property (nonatomic) BOOL needReload;
 
++ (Class)objectClass;
+
 @end

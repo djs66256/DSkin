@@ -21,42 +21,9 @@
 @implementation DImage
 @synthesize object = _object;
 
-+ (BOOL)instancesRespondToSelector:(SEL)aSelector
++ (Class)objectClass
 {
-    return [self instancesRespondToSelector:aSelector] || [InheritanceClass instancesRespondToSelector:aSelector];
-}
-
-+ (BOOL)conformsToProtocol:(Protocol *)protocol
-{
-    return [self conformsToProtocol:protocol] || [InheritanceClass conformsToProtocol:protocol];
-}
-
-+ (IMP)instanceMethodForSelector:(SEL)aSelector
-{
-    IMP imp = [self instanceMethodForSelector:aSelector];
-    if (imp == NULL) {
-        imp = [InheritanceClass instanceMethodForSelector:aSelector];
-    }
-    return imp;
-}
-
-+ (NSMethodSignature *)instanceMethodSignatureForSelector:(SEL)aSelector
-{
-    NSMethodSignature *method = [self instanceMethodSignatureForSelector:aSelector];
-    if (method == NULL) {
-        method = [InheritanceClass instanceMethodSignatureForSelector:aSelector];
-    }
-    return method;
-}
-
-+ (BOOL)resolveClassMethod:(SEL)sel
-{
-    return [self resolveClassMethod:sel] || [InheritanceClass resolveClassMethod:sel];
-}
-
-+ (BOOL)resolveInstanceMethod:(SEL)sel
-{
-    return [super resolveInstanceMethod:sel] || [InheritanceClass resolveInstanceMethod:sel];
+    return [UIImage class];
 }
 
 #pragma mark - override
